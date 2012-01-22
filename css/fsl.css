@@ -11,10 +11,12 @@ body {
 }
 body:hover .fsllogo {
     -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
-    -moz-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );    
     font-size:80pt;
 }
 .fsllogo {
+    top:25%; left:10%;    
+    margin-top:-130px; margin-left:-30px;
+    
     font-family: 'Gudea', sans-serif;    
     background-color:rgb(255,218,0);
     position:absolute;
@@ -23,29 +25,24 @@ body:hover .fsllogo {
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
     -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 40deg );
-    
-    -moz-transform: rotateY(40);    
-    -moz-transform-origin:0% 0%; 
+
+    -moz-transform-style: preserve-3d;
+    -moz-perpective-origin:0px 0px;
     -moz-transition-property: all;
     -moz-transition-duration: 350ms;
     -moz-transition-timing-function: ease-in-out;
+    -moz-transform: rotateY(40deg);
+    -moz-perspective:200px;        
     
     font-size:150pt;
     width:1800px;
-    /*border:1px solid rgba(100,100,100,0.8);*/
-    font-style:italic;
-    left:160px;
-    top:170px;
-}
-body:hover .fsltagline {
-    left:190px;
-    top:274px;
+    font-style:italic;    
 }
 .fsltagline {
+    top:25%; left:10%;
+    margin-left:310px;
     font-size:14pt;
     position:absolute;
-    left:500px;
-    top:300px;
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
@@ -53,12 +50,16 @@ body:hover .fsltagline {
     -moz-transition-duration: 350ms;
     transition-timing-function: ease-in-out;    
 }
+body:hover .fsltagline {
+    margin-top:-26px; margin-left:0px;
+}
+
 .fslmain {
+    top:25%; left:10%;
+    margin:0px; 
     font-weight:400;
     position:absolute;
-    /*border:1px solid rgba(0,0,0,0.2);*/
-    top:300px;
-    left:250px;
+    border:1px solid rgba(0,0,0,0.2);
     width:800px;
     height:300px;
 }
