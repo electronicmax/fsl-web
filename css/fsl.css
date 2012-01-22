@@ -9,9 +9,9 @@ body {
     color:black;
     font-family:'PT Sans', sans-serif;
 }
-
 body:hover .fsllogo {
     -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
+    -moz-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );    
     font-size:80pt;
 }
 .fsllogo {
@@ -22,7 +22,14 @@ body:hover .fsllogo {
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
-    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 40deg );    
+    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 40deg );
+    
+    -moz-transform: rotateY(40);    
+    -moz-transform-origin:0% 0%; 
+    -moz-transition-property: all;
+    -moz-transition-duration: 350ms;
+    -moz-transition-timing-function: ease-in-out;
+    
     font-size:150pt;
     width:1800px;
     /*border:1px solid rgba(100,100,100,0.8);*/
@@ -42,6 +49,9 @@ body:hover .fsltagline {
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: all;
+    -moz-transition-duration: 350ms;
+    transition-timing-function: ease-in-out;    
 }
 .fslmain {
     font-weight:400;
