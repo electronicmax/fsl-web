@@ -1,0 +1,57 @@
+
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500);
+
+/* 'PT Sans', 'Gudea' */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Gudea:400,400italic);
+
+body {
+    background-color:rgb(255,218,0);
+    color:black;
+    font-family:'PT Sans', sans-serif;
+}
+
+body:hover .fsllogo {
+    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
+    font-size:80pt;
+}
+.fsllogo {
+    font-family: 'Gudea', sans-serif;    
+    background-color:rgb(255,218,0);
+    position:absolute;
+    -webkit-transform-origin:0% 0%; /* Safari and Chrome */    
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 40deg );    
+    font-size:150pt;
+    width:1800px;
+    /*border:1px solid rgba(100,100,100,0.8);*/
+    font-style:italic;
+    left:160px;
+    top:170px;
+}
+body:hover .fsltagline {
+    left:190px;
+    top:274px;
+}
+.fsltagline {
+    font-size:14pt;
+    position:absolute;
+    left:500px;
+    top:300px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+.fslmain {
+    font-weight:400;
+    position:absolute;
+    /*border:1px solid rgba(0,0,0,0.2);*/
+    top:300px;
+    left:250px;
+    width:800px;
+    height:300px;
+}
+h1 {
+    font-size:18pt;
+}
