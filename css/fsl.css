@@ -4,19 +4,22 @@
 /* 'PT Sans', 'Gudea' */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Gudea:400,400italic);
 
+h1,h2,h3,h4{ margin:0px; border:0px; }
+h1 { font-size:48pt; }
+A {
+    text-decoration:none;
+    text-style:italics;
+    color:black;
+    font-weight:bold;
+}
 body {
     background-color:rgb(255,218,0);
     color:black;
     font-family:'PT Sans', sans-serif;
 }
-body:hover .fsllogo {
-    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
-    font-size:80pt;
-}
 .fsllogo {
-    top:25%; left:10%;    
+    top:22%; left:10%;    
     margin-top:-130px; margin-left:-30px;
-    
     font-family: 'Gudea', sans-serif;    
     background-color:rgb(255,218,0);
     position:absolute;
@@ -24,22 +27,24 @@ body:hover .fsllogo {
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
-    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 40deg );
+    -webkit-transform: perspective( 800 ) scale3d(2.0,2.0,2.0) translateZ(-25px) rotateY( 40deg );
 
-    -moz-transform-style: preserve-3d;
-    -moz-perpective-origin:0px 0px;
     -moz-transition-property: all;
     -moz-transition-duration: 350ms;
     -moz-transition-timing-function: ease-in-out;
-    -moz-transform: rotateY(40deg);
-    -moz-perspective:200px;        
-    
-    font-size:150pt;
+    -moz-transform: matrix(1, 0, -0.8, 1, 0, 0);
+
+    font-size:80pt;
     width:1800px;
     font-style:italic;    
 }
+body:hover .fsllogo {
+    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
+    -moz-transform: matrix(1, 0, 0, 1, 1, 1); 
+}
+
 .fsltagline {
-    top:25%; left:10%;
+    top:22%; left:10%;
     margin-left:310px;
     font-size:14pt;
     position:absolute;
@@ -54,15 +59,26 @@ body:hover .fsltagline {
     margin-top:-26px; margin-left:0px;
 }
 
+h3 {
+    font-size:20pt;
+}
 .fslmain {
-    top:25%; left:10%;
-    margin:0px; 
+    font-size:13pt;
+    position:relative;
+    margin: 0px 0px 0px 0px;
+    padding:0px 100px 0px 0px;
+    top:28%; left:13%;
     font-weight:400;
     position:absolute;
-    border:1px solid rgba(0,0,0,0.2);
-    width:800px;
-    height:300px;
+    width:40%;
 }
-h1 {
-    font-size:18pt;
+.fslmain .box {
+    position:absolute;
+    right:-280px;
+    top:10%;
+    width:350px;
 }
+.fslmain .copy {
+    margin-top:20px;
+}
+
