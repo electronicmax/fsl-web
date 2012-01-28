@@ -18,7 +18,7 @@ body {
     font-family:'PT Sans', sans-serif;
 }
 .fsllogo {
-    top:22%; left:10%;    
+    top:23%; left:10%;    
     margin-top:-130px; margin-left:-30px;
     font-family: 'Gudea', sans-serif;    
     background-color:rgb(255,218,0);
@@ -27,26 +27,20 @@ body {
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
-    -webkit-transform: perspective( 800 ) scale3d(2.0,2.0,2.0) translateZ(-25px) rotateY( 40deg );
-
+    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
     -moz-transition-property: all;
     -moz-transition-duration: 350ms;
     -moz-transition-timing-function: ease-in-out;
-    -moz-transform: matrix(1, 0, -0.1, 1, 0, 0);
-
-    font-size:80pt;
-    /*width:1800px;*/
-    font-style:italic;    
-}
-
-body:hover .fsllogo {
-    -webkit-transform: perspective( 800 ) translateZ(-25px) rotateY( 0deg );
     -moz-transform: matrix(1, 0, 0, 1, 1, 1); 
+    font-size:64pt;
+    font-style:italic;
 }
-
+div.fsllogo.intro {
+    -webkit-transform: perspective( 800 ) scale3d(2.0,2.0,2.0) translateZ(-25px) rotateY( 40deg );    
+    -moz-transform: matrix(1, 0, 0, 1, 1, 1);
+}
 .fsltagline {
     top:22%; left:10%;
-    margin-left:310px;
     font-size:14pt;
     position:absolute;
     -webkit-transition-property: all;
@@ -54,10 +48,12 @@ body:hover .fsllogo {
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition-property: all;
     -moz-transition-duration: 350ms;
-    transition-timing-function: ease-in-out;    
+    transition-timing-function: ease-in-out;
+    margin-top:-26px; margin-left:0px;    
 }
-body:hover .fsltagline {
-    margin-top:-26px; margin-left:0px;
+div.fsltagline.intro {
+    margin-left:310px;
+    top:25%;
 }
 
 h3 {
@@ -68,11 +64,20 @@ h3 {
     position:relative;
     margin: 0px 0px 0px 0px;
     padding:0px 100px 0px 0px;
-    top:28%; left:13%;
+    top:26.5%; left:13%;
     font-weight:400;
     position:absolute;
     width:40%;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: all;
+    -moz-transition-duration: 350ms;
 }
+div.fslmain.intro {
+    top:29%;
+}
+
 .fslmain .box {
     position:absolute;
     right:-280px;
@@ -87,15 +92,25 @@ h3 {
     padding:0px;
     vertical-align:middle;
 }
-.inviteme img {
-    float:right;
+div.inviteme div.arrow {
+    display:inline-block;
+    margin-left:10px;
     width:25px;
     vertical-align:middle;
     margin-right:93px;
     padding:0px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: all;
+    -moz-transition-duration: 350ms;
+    -moz-transition-timing-function: ease-in-out;
 }
-
+div.inviteme div.arrow:hover {
+    margin-left:15px;
+}
 input[type="text"].styled, input[type="password"].styled, div.inputwrapper {
+    display:inline-block;    
     margin: 0;
     padding: 0;
     background-color: rgba(255,255,255,0);
@@ -109,11 +124,10 @@ input[type="text"].styled, input[type="password"].styled, div.inputwrapper {
     -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.31);
     -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.31);
     box-shadow: inset 0 0 3px rgba(0,0,0,0.31);
-    font-size: 12px;
-    color: #333;
+    color: #111;
     line-height: 1.3em;
     font-size: 13px;
-    font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
+    /*font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;*/
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
