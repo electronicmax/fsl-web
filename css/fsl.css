@@ -47,7 +47,7 @@ a:visited {
 	-moz-transition: color 0.4s ease-out;
 	-o-transition: color 0.4s ease-out;
 	transition: color 0.4s ease-out;
-	color:rgb(225,135,80);
+	color:rgb(125,45,40);
 	outline: none;
 	text-decoration:none;
 	}
@@ -86,7 +86,6 @@ A {
 div.fsllogo {
     top:50px; left:50px;
     position:absolute;
-    border:1px solid rgba(0,0,0,0.1);
     padding:28px;
     font-family: 'Gudea', sans-serif;    
     background-color:rgb(255,218,0);
@@ -150,16 +149,18 @@ h3 {
 #content article {
     position:absolute;
     padding:50% 0 0 0; 
-    border:1px solid rgba(0,0,0,0.2);
 }
 #content article.welcome {
     top:0px;
     padding-top:10%;
 }
-#content article.webbox {  top:1080px; }
+#content article.webbox {
+    top:1080px;
+    padding-top:37%;
+}
 #content article.about {
     top:2000px;  padding-bottom:200px;
-    padding-top:40%;
+    padding-top:30%;
 }
 #content article div.next_arrow {
     text-align:left;
@@ -177,7 +178,6 @@ h3 {
 #content article div.next_arrow:hover {
     right:30px;    
 }
-
 nav {
     position:fixed;
     top:0; left:0px; bottom:0px;
