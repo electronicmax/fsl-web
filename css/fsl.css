@@ -4,25 +4,92 @@
 /* 'PT Sans', 'Gudea' */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Gudea:400,400italic);
 
-h1,h2,h3,h4{ margin:0px; border:0px; }
-h1 { font-size:48pt; }
-A {
-    text-decoration:none;
-    text-style:italics;
-    color:black;
-    font-weight:bold;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 350ms;        
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+a, a:link,
+a:active,
+a:visited {
+	-webkit-transition: color 0.8s ease-out;
+	-moz-transition: color 0.4s ease-out;
+	-o-transition: color 0.4s ease-out;
+	transition: color 0.4s ease-out;
+	color:rgb(225,135,80);
+	outline: none;
+	text-decoration:none;
+	}
+	a:hover {
+	-webkit-transition: color 0.8s ease-out;
+	-moz-transition: color 0.4s ease-out;
+	-o-transition: color 0.4s ease-out;
+	transition: color 0.4s ease-out;
+            
+            color:rgb(0,0,0);
+		}
+
+blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Extended base styles (site specific) *****************************************************************/
+html {
+    overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 body {
     background-color:rgb(255,218,0);
     color:black;
-    font-family:'PT Sans', sans-serif;
+    font-family:'PT Sans', sans-serif;    
 }
-.fsllogo {
-    top:23%; left:10%;    
-    margin-top:-130px; margin-left:-30px;
+h1,h2,h3,h4{ margin:0px; border:0px; }
+h1 { font-size:48pt; }
+A {
+    text-decoration:none;
+    font-style:italic;
+    color:black;
+    font-weight:bold;
+}
+div.fsllogo {
+    top:50px; left:50px;
+    position:absolute;
+    border:1px solid rgba(0,0,0,0.1);
+    padding:28px;
     font-family: 'Gudea', sans-serif;    
     background-color:rgb(255,218,0);
-    position:absolute;
     -webkit-transform-origin:0% 0%; /* Safari and Chrome */    
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
@@ -40,7 +107,8 @@ div.fsllogo.intro {
     -moz-transform: matrix(1, 0, 0, 1, 1, 1);
 }
 .fsltagline {
-    top:22%; left:10%;
+    margin-top:-26px; margin-left:0px;    
+    top:180px; left:100px;
     font-size:14pt;
     position:absolute;
     -webkit-transition-property: all;
@@ -49,45 +117,83 @@ div.fsllogo.intro {
     -moz-transition-property: all;
     -moz-transition-duration: 350ms;
     transition-timing-function: ease-in-out;
-    margin-top:-26px; margin-left:0px;    
 }
 div.fsltagline.intro {
-    margin-left:310px;
-    top:25%;
+   margin-top:0px;
+   margin-left:200px;
 }
-
 h3 {
     font-size:20pt;
 }
-.fslmain {
-    font-size:13pt;
-    position:relative;
-    margin: 0px 0px 0px 0px;
-    padding:0px 100px 0px 0px;
-    top:26.5%; left:13%;
-    font-weight:400;
+#content {
+    z-index:10;
     position:absolute;
-    width:40%;
+    top:0; left:200px; right:0px; bottom:0px;
+    display:inline-block;
+    font-size:13pt;
+    padding: 0 10px;
+    /*margin: 50px auto;*/
+    height:100%;
+    line-height: 1.7;
+    font-weight:400;
+    width:500px;    
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition-property: all;
     -moz-transition-duration: 350ms;
+    margin:200px 0 200px 0;
 }
-div.fslmain.intro {
-    top:29%;
+#content p {
+    margin:20px 0px;
 }
-
-.fslmain .box {
+#content article {
     position:absolute;
-    right:-280px;
-    top:10%;
-    width:350px;
+    padding:50% 0 0 0; 
+    border:1px solid rgba(0,0,0,0.2);
 }
-.fslmain .copy {
-    margin-top:20px;
+#content article.welcome {
+    top:0px;
+    padding-top:10%;
+}
+#content article.webbox {  top:1080px; }
+#content article.about {
+    top:2000px;  padding-bottom:200px;
+    padding-top:40%;
+}
+#content article div.next_arrow {
+    text-align:left;
+    position:absolute;
+    right:40px; bottom:0px;
+    font-size:24pt;
+    padding-left:0px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: all;
+    -moz-transition-duration: 350ms;
+    -moz-transition-timing-function: ease-in-out;
+}
+#content article div.next_arrow:hover {
+    right:30px;    
 }
 
+nav {
+    position:fixed;
+    top:0; left:0px; bottom:0px;
+    font-size:16pt;
+    font-weight:100;    
+    z-index:5;
+    width: 180px;
+    padding:50% 0px 0px 20px;
+    margin:-200px 0 0 0;
+}
+nav div.nav_el {
+    margin: 30px auto;
+    vertical-align:middle;
+    font-weight:100;
+    width:150px;
+}
 .inviteme {
     padding:0px;
     vertical-align:middle;
@@ -134,4 +240,29 @@ input[type="text"].styled, input[type="password"].styled, div.inputwrapper {
     -webkit-box-sizing: border-box;
     width:70%;
     border:1px solid black;
+}
+#boxlayer, #blrain #blbox {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+
+}
+#boxlayer {
+    position:fixed;
+    z-index:0;
+    top:0; bottom:0px; left: 0px; right:0px;
+}
+#blrain {
+    position:absolute;
+    opacity:0.4;
+    top:350px; left:404px;
+}
+#blbox {
+    position:absolute;
+    top:1200px;
+    left:500px;
+    opacity:0.4;    
+}
+ul.founders li {
+    margin: 20px 0;
 }

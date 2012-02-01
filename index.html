@@ -9,42 +9,67 @@
   <script type="text/javascript" src="lib/require.js" data-main="js/fsl-main.js"></script>
 </head>
 <body>
-  <div class="fsllogo intro">faststream labs</div>
-  <div class="fsltagline intro">making the web a better place</div>
-  <div class="fslmain intro">
-    <h3>What's the Web's biggest problem?</h3>
+    <header>
+      <div id="logo_layer">
+        <div class="fsllogo intro">faststream labs</div>
+        <div class="fsltagline intro">making the web a better place</div>
+      </div>
+    </header>
     
-    <div class="copy">
+  <nav id="nav">
+    <div class="nav_el welcome"><a href="#welcome">welcome</a></div>
+    <div class="nav_el webbox"><a href="#webbox">webbox</a></div>
+    <div class="nav_el about"><a href="#about">about</a></div>
+  </nav>    
+  <div id="content">
+    <article id="welcome" class="welcome">
+      <h3>What's the Web's biggest problem?</h3>
+        <p>
+          Over <a target="_top" href="http://www.bbc.co.uk/news/technology-15937139">90% of web  users in the UK</a> are concerned about the ways that companies
+          like Facebook, Google, and Amazon are amassing information about
+          them -- but without alternatives, keep using these "cloud
+          services" anyway.
+        </p>
+        <p>This needs to change.</p><div class="next_arrow">&#8594;</div>
+    </article>    
+    <article id="webbox" class="webbox">
+      <h3>Introducing WebBox</h3>        
       <p>
-      Over <a target="_top"
-      href="http://www.bbc.co.uk/news/technology-15937139">90% of web
-      users in the UK</a> are concerned about the ways that companies
-      like Facebook, Google, and Amazon are amassing information about
-      them -- but without alternatives, keep using these "cloud
-      services" anyway.
-      </p>
-
-      <p>This needs to change.</p>
-
-      <p>
-      We're developing a free and open source platform
-      called <b>WebBox</b> to enable a new class of apps that let you
-      exchange data directly with your friends
-      <i>without any centralized servers</i> -- meaning no Big
-      Databases either.
-      </p>
-
-      <p>Developer Preview 1 is coming 29 Feb 2012.<p>
-
+        We're developing a free and open source platform
+        called <b>WebBox</b> to enable a new class of apps that let you
+        exchange data directly with your friends
+        <i>without any centralized servers</i> -- meaning no Big
+        Databases either.
+      </p>        
+      <p>Developer Preview 1 is coming 29 Feb 2012.</p>
       <div class="inviteme">
 	<p>
-        Request an invite to <b>WebBox</b> now :<br>
+          Request an invite to <b>WebBox</b> now :<br>
 	</p>
         <input type="text" class="styled"><div class="arrow">&#9655;</div>
       </div>
-    </div>
-    <img class="box" src="imgs/xparent-box.png"/>
-  </div>  
-         
+    </article>
+    
+    <article id="about" class="about">
+      <h3>about faststream labs</h3>
+      <p>
+        faststream labs were founded to understand personal data
+        management and to build tools to support people manage
+        their data.  our team consists of : 
+      </p>        
+      <ul class="founders">
+        <li><b>dr. mc schraefel</b> - mc is lecturer in human-computer interaction at the <a href="">University of Southampton</a>
+        <li><b>dr. max van kleek</b> (aka "eMax")- <a href="http://hip.cat/emax">eMax</a> has a background in personal information management, cognitive science, AI and interaction design.  Max received is S.B. (2001), M.Eng (2003) and Ph.D. (2011) degrees in Computer Sience from M.I.T. 
+        <li><b>dr. daniel a smith</b> - Dan specialised in high-performance scalable architectures for data management and end-user interfaces for data visualisation and maniulation.  Dan received his S.B. (xxx), M.S. and Ph.D. in Elecronics and Computer Science at the University of Southampton.
+      </ul>
+    </article>
+</div>
+
+  <!-- background layers --> 
+  <div id="boxlayer">
+    <img id="blrain" src="imgs/rain.png"/>
+    <img id="blbox" src="imgs/xparent-box.png"/>
+  </div>
+  
 </body>
 </html>
