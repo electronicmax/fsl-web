@@ -47,18 +47,19 @@ a:visited {
 	-moz-transition: color 0.4s ease-out;
 	-o-transition: color 0.4s ease-out;
 	transition: color 0.4s ease-out;
-	color:rgb(125,45,40);
+	color:rgb(45,45,40);
 	outline: none;
 	text-decoration:none;
+        font-weight: normal;
 	}
 	a:hover {
+        text-weight: bold;
 	-webkit-transition: color 0.8s ease-out;
 	-moz-transition: color 0.4s ease-out;
 	-o-transition: color 0.4s ease-out;
 	transition: color 0.4s ease-out;
-            
-            color:rgb(0,0,0);
-		}
+        color:rgb(0,0,0);
+}
 
 blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none; }
 table {
@@ -156,11 +157,11 @@ h3 {
 }
 #content article.webbox {
     top:1080px;
-    padding-top:37%;
+    padding-top:32%;
 }
 #content article.about {
-    top:2000px;  padding-bottom:200px;
-    padding-top:30%;
+    top:2000px;  padding-bottom:250px;
+    padding-top:25%;
 }
 #content article div.next_arrow {
     text-align:left;
