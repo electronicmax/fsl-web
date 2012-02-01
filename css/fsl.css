@@ -255,13 +255,14 @@ input[type="text"].styled, input[type="password"].styled, div.inputwrapper {
 #blrain {
     position:absolute;
     opacity:0.4;
-    top:350px; left:404px;
+    left:404px;
+    // top:350px;     
 }
 #blbox {
     position:absolute;
-    top:1200px;
     left:500px;
-    opacity:0.4;    
+    opacity:0.25;
+    // top:1200px;
 }
 ul.founders li {
     margin: 20px 0;

@@ -5,9 +5,13 @@ require(
 
         var parallaxScroll = function(){
             var scrolled = $(window).scrollTop();
-	    $('#parallax-bg1').css('top',(0-(scrolled*.25))+'px');
-	    $('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
-	    $('#parallax-bg3').css('top',(0-(scrolled*.75))+'px'); 
+            $('#blrain').css('top',(400-(2*scrolled))+'px');
+            console.log((2400-(3*scrolled)));
+            $('#blbox').css('top',(4150-(3*scrolled))+'px');
+            
+            //	    $('#blrain').css('top',(350-(scrolled*.25))+'px');
+	    // $('#blbox').css('top',(0-(scrolled*.5))+'px');
+	    // $('#parallax-bg3').css('top',(0-(scrolled*.75))+'px'); 
         };
 
         $('nav .welcome').bind('click', function() {
@@ -22,5 +26,8 @@ require(
         $('nav .about, #webbox div.next_arrow').bind('click', function() {
                              $('html, body').animate({scrollTop:$('#about').offset().top }, 1000, parallaxScroll);
                              return false;
-                         });        
+                         });
+
+        $(window).bind('scroll',function(e){  parallaxScroll(); });
+        parallaxScroll();            
     });
