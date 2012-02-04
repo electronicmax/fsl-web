@@ -181,13 +181,13 @@ h3 {
 }
 nav {
     position:fixed;
-    top:0; left:0px; bottom:0px;
+    top:50%; left:18px; bottom:0px;
     font-size:16pt;
     font-weight:100;    
     z-index:5;
     width: 180px;
-    padding:50% 0px 0px 20px;
-    margin:-200px 0 0 0;
+    /*padding:50% 0px 0px 20px;*/
+    margin:-80px 0 0 0;
 }
 nav div.nav_el {
     margin: 30px auto;
@@ -256,7 +256,7 @@ input[type="text"].styled, input[type="password"].styled, div.inputwrapper {
 #blrain {
     position:absolute;
     opacity:0.4;
-    left:404px;
+    left:380px;
     // top:350px;     
 }
 #blbox {

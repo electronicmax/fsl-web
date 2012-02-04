@@ -5,7 +5,7 @@ require(
 
         var parallaxScroll = function(){
             var scrolled = $(window).scrollTop();
-            $('#blrain').css('top',(410-(2*scrolled))+'px');
+            $('#blrain').css('top',(420-(2*scrolled))+'px');
             console.log((2400-(3*scrolled)));
             $('#blbox').css('top',(4150-(3*scrolled))+'px');
             
