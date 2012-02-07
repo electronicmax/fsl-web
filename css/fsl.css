@@ -4,6 +4,8 @@
 /* 'PT Sans', 'Gudea' */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Gudea:400,400italic);
 
+em { font-style:italic !important; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -85,9 +87,9 @@ A {
     font-weight:bold;
 }
 div.fsllogo {
-    top:50px; left:50px;
+    top:50px; left:30px;
     position:absolute;
-    padding:28px;
+    padding:23px 50px 50px 50px;
     font-family: 'Gudea', sans-serif;    
     background-color:rgb(255,218,0);
     -webkit-transform-origin:0% 0%; /* Safari and Chrome */    
@@ -99,18 +101,20 @@ div.fsllogo {
     -moz-transition-duration: 350ms;
     -moz-transition-timing-function: ease-in-out;
     -moz-transform: matrix(1, 0, 0, 1, 1, 1); 
-    font-size:64pt;
+    font-size:69pt;
     font-style:italic;
 }
 div.fsllogo.intro {
-    -webkit-transform: perspective( 800 ) scale3d(2.0,2.0,2.0) translateZ(-25px) rotateY( 40deg );    
+    -webkit-transform: perspective( 800 ) scale3d(2.0,2.0,2.0) translateZ(-25px) rotateY( 20deg );    
     -moz-transform: matrix(1, 0, 0, 1, 1, 1);
 }
 .fsltagline {
     margin-top:-26px; margin-left:0px;    
-    top:180px; left:100px;
-    font-size:14pt;
+    top:190px; left:84px;
+    font-size:15pt;
     position:absolute;
+    text-align:left;
+    
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
@@ -119,8 +123,10 @@ div.fsllogo.intro {
     transition-timing-function: ease-in-out;
 }
 div.fsltagline.intro {
-   margin-top:0px;
-   margin-left:200px;
+   /*margin-left:220px;*/
+   opacity:0;
+    border:1px solid rgba(0,0,0,0.2);
+   
 }
 h3 {
     font-size:20pt;
@@ -130,7 +136,7 @@ h3 {
     position:absolute;
     top:0; left:200px; right:0px; bottom:0px;
     display:inline-block;
-    font-size:13pt;
+    font-size:12pt;
     padding: 0 10px;
     /*margin: 50px auto;*/
     height:100%;
@@ -144,8 +150,9 @@ h3 {
     -moz-transition-duration: 350ms;
     margin:200px 0 200px 0;
 }
+
 #content p {
-    margin:20px 0px;
+    margin:28px 0px;
 }
 #content article {
     position:absolute;
@@ -153,22 +160,22 @@ h3 {
 }
 #content article.welcome {
     top:0px;
-    padding-top:10%;
+    padding-top:14%;
 }
 #content article.webbox {
     top:1080px;
-    padding-top:32%;
+    padding-top:25%;
 }
 #content article.about {
     top:2000px;  padding-bottom:250px;
-    padding-top:25%;
+    padding-top:23%;
 }
 #content article div.next_arrow {
     text-align:left;
     position:absolute;
-    right:40px; bottom:0px;
+    right:40px; bottom:15px;
+    margin:0;  padding:0;
     font-size:24pt;
-    padding-left:0px;
     -webkit-transition-property: all;
     -webkit-transition-duration: 350ms;
     -webkit-transition-timing-function: ease-in-out;
@@ -255,14 +262,14 @@ input[type="text"].styled, input[type="password"].styled, div.inputwrapper {
 }
 #blrain {
     position:absolute;
-    opacity:0.4;
-    left:380px;
-    // top:350px;     
+    opacity:0.08;
+    left:420px; /* top set by js */
+    width:330px;
 }
 #blbox {
     position:absolute;
-    left:500px;
-    opacity:0.25;
+    left:340px;
+    opacity:0.14;
     // top:1200px;
 }
 ul.founders li {
